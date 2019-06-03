@@ -7,8 +7,10 @@ pipeline {
         stages{
         	stage('Build'){
         		steps {
+                                echo "ruier is success"
         			sh "mvn clean package"
         			sh "printenv"
+
         		}
         	}
         }
