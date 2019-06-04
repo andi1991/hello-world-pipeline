@@ -1,5 +1,7 @@
 pipeline {
-        agent any
+        agent {
+		label 'jdk'
+	}
         tools {
         maven 'mvn3.5.4'
         }
