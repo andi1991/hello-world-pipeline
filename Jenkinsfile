@@ -15,5 +15,15 @@ pipeline {
 
         		}
         	}
+                stage('Deploy'){
+			steps {
+				ansiblePlayBook(
+					playbook: "${env.WORKSPACE}/playbook.yml",
+					inventory: "${env.WORKSPACE}/hosts",
+					credentialsId: 'ansible1'
+				)		
+	
+			}
+		}
         }
 }
