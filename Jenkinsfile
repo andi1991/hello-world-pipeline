@@ -1,6 +1,6 @@
 pipeline {
         agent {
-		label 'jdk'
+		label 'server'
 	}
         tools {
         maven 'mvn3.5.4'
