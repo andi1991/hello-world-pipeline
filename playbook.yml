@@ -5,6 +5,6 @@
       shell: echo "test11" 
     - name: copy file to dest
       copy:
-        src: ${env.WORKSPACE}/target/trucks.war
+        src: target/trucks.war
         dest: /root/
         owner: root
