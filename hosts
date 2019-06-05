@@ -1,2 +1,2 @@
 [example]
-192.168.1.242 ansible_ssh_user=root
+192.168.1.242
